@@ -1,4 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/webcuti1/public_html/ && sh scripts/cpanel-deploy.sh
+    - export DEPLOYPATH=/home/awxisina/public_html/ && sh scripts/cpanel-deploy.sh

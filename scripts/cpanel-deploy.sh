@@ -1,9 +1,14 @@
 #!/bin/sh
 # Copiere whitelist în public_html (.env rămâne doar pe server, nu din Git)
 
-DEPLOYPATH="${DEPLOYPATH:-/home/webcuti1/public_html/}"
+DEPLOYPATH="${DEPLOYPATH:-/home/awxisina/public_html/}"
 HTACCESS_PATHS="data/.htaccess"
 DEPLOY_DIRS="assets css data includes js"
+
+if [ ! -d "$DEPLOYPATH" ]; then
+  echo "ERROR: DEPLOYPATH missing: $DEPLOYPATH" >&2
+  exit 1
+fi
 
 chmod 755 "$DEPLOYPATH" 2>/dev/null || true
 
