@@ -10,8 +10,6 @@ if [ ! -d "$DEPLOYPATH" ]; then
   exit 1
 fi
 
-python3 scripts/generate-site.py || exit 1
-
 chmod 755 "$DEPLOYPATH" 2>/dev/null || true
 
 copy_htaccess() {

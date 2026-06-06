@@ -31,10 +31,7 @@ PHP must be able to write under `data/` (`submissions.jsonl`, `contact_rate.json
 
 ## Deploy (cPanel)
 
-Git push triggers `.cpanel.yml`, which runs `scripts/cpanel-deploy.sh`. The script:
-
-1. Runs `python3 scripts/generate-site.py`
-2. Copies whitelisted assets, HTML, PHP, and SEO files to `public_html`
+Git push triggers `.cpanel.yml`, which runs `scripts/cpanel-deploy.sh`. The script copies whitelisted assets, HTML, PHP, and SEO files to `public_html` (no Python on the server — run `python3 scripts/generate-site.py` locally before push).
 
 `.env` is **not** in Git — create it on the server with production secrets.
 
