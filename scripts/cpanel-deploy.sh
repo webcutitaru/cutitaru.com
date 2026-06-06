@@ -10,6 +10,8 @@ if [ ! -d "$DEPLOYPATH" ]; then
   exit 1
 fi
 
+python3 scripts/generate-site.py || exit 1
+
 chmod 755 "$DEPLOYPATH" 2>/dev/null || true
 
 copy_htaccess() {
@@ -38,6 +40,18 @@ for f in ./*.php; do
 done
 
 for f in ./*.html cutitaru-logo.png; do
+  [ -f "$f" ] || continue
+  /bin/cp -f "$f" "$DEPLOYPATH" 2>/dev/null || true
+done
+
+for dir in en ru; do
+  if [ -d "$dir" ]; then
+    /bin/mkdir -p "$DEPLOYPATH$dir"
+    /bin/cp -R "$dir/"* "$DEPLOYPATH$dir/" 2>/dev/null || true
+  fi
+done
+
+for f in robots.txt sitemap.xml llms.txt; do
   [ -f "$f" ] || continue
   /bin/cp -f "$f" "$DEPLOYPATH" 2>/dev/null || true
 done
