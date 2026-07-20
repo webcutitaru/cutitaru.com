@@ -626,7 +626,7 @@
       screen: screenLine,
     };
 
-    fetch("visit_ping.php", {
+    fetch("/visit_ping.php", {
       method: "POST",
       credentials: "same-origin",
       headers: { "Content-Type": "application/json" },
