@@ -1,4 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/awxisina/public_html/ && sh scripts/cpanel-deploy.sh

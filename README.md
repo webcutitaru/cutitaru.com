@@ -1,6 +1,6 @@
 # cutitaru.com
 
-Trilingual static site (RO / EN / RU) with PHP contact handling and cPanel deploy.
+Trilingual static site (RO / EN / RU) with PHP contact handling and Hestia VPS deploy.
 
 ## Build
 
@@ -29,11 +29,21 @@ Serve the folder with PHP (MAMP, `php -S`, etc.). Copy `.env.example` to `.env` 
 
 PHP must be able to write under `data/` (`submissions.jsonl`, `contact_rate.json`, `visit_notify_rate.json`).
 
-## Deploy (cPanel)
+## Deploy (Hestia VPS)
 
-Git push triggers `.cpanel.yml`, which runs `scripts/cpanel-deploy.sh`. The script copies whitelisted assets, HTML, PHP, and SEO files to `public_html` (no Python on the server — run `python3 scripts/generate-site.py` locally before push).
+From the project root (after generating HTML locally if needed):
 
-`.env` is **not** in Git — create it on the server with production secrets.
+```bash
+# SSH key auth (preferred)
+./scripts/hestia-deploy.sh
+
+# Or password auth
+SSHPASS='…' ./scripts/hestia-deploy.sh
+```
+
+Defaults: `root@85.121.178.244` → `/home/admin/web/cutitaru.com/public_html`. Override with `DEPLOY_HOST` / `DEPLOY_PATH` / `DEPLOY_OWNER`.
+
+`.env` is **not** in Git — create it on the server with production secrets. Runtime data under `data/` is preserved on deploy.
 
 ## Contact form security
 
