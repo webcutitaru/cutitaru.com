@@ -519,15 +519,12 @@ def service_href(lang: str, key: str | None, ap: str) -> str:
     return fname
 
 
-PARTNERS_ROW1 = [
-    {"name": "LikeHome", "url": "https://www.likehome.md", "file": "likehome-logo.png", "w": 260, "h": 118, "img_class": "partners-marquee__logo--rounded"},
+PARTNERS = [
+    {"name": "LikeHome", "url": "https://www.likehome.md", "file": "likehome-logo.png", "w": 260, "h": 118, "img_class": "partners-wall__logo--rounded"},
     {"name": "Aquamarine", "url": "https://aquamarine.md", "file": "aquamarine-logo.webp", "w": 243, "h": 40},
     {"name": "Instant Convert Pro", "url": "https://convert.cutitaru.com/", "file": "instant convert pro logo.png", "w": 200, "h": 64},
     {"name": "Perfect Media Pro", "url": "https://www.perfectmedia.pro/", "file": "perfect media pro logo.webp", "w": 200, "h": 64},
     {"name": "OLY Studio", "url": "https://www.oly-studio.com/", "file": "oly studio logo.webp", "w": 200, "h": 64},
-]
-
-PARTNERS_ROW2 = [
     {"name": "English Please", "url": "https://www.englishplease.net/", "file": "english please logo.webp", "w": 240, "h": 80},
     {"name": "Select Transfer", "url": "https://selecttransferncc.com/", "file": "select transfer logo.webp", "w": 220, "h": 72},
     {"name": "Crigo Group", "url": "https://crigogroup.com/", "file": "crigo group logo.webp", "w": 200, "h": 64},
@@ -536,8 +533,14 @@ PARTNERS_ROW2 = [
     {"name": "Prime Rent", "url": None, "file": "prime rent logo.webp", "w": 200, "h": 64},
 ]
 
+PARTNERS_ARIA = {
+    "ro": "Logo-uri parteneri",
+    "en": "Partner logos",
+    "ru": "Логотипы партнёров",
+}
 
-def _partner_logo_item(ap: str, partner: dict, *, duplicate: bool = False) -> str:
+
+def _partner_logo_item(ap: str, partner: dict) -> str:
     src = f"{ap}assets/partners/{quote(partner['file'])}"
     img_class = partner.get("img_class", "")
     class_attr = f' class="{img_class}"' if img_class else ""
@@ -545,37 +548,24 @@ def _partner_logo_item(ap: str, partner: dict, *, duplicate: bool = False) -> st
         f'<img src="{src}" alt="{partner["name"]}" width="{partner["w"]}" height="{partner["h"]}" '
         f'loading="lazy" decoding="async"{class_attr} />'
     )
-    hidden = ' aria-hidden="true"' if duplicate else ""
     if partner.get("url"):
         inner = (
             f'<a href="{partner["url"]}" target="_blank" rel="noopener noreferrer" '
-            f'aria-label="{partner["name"]}" tabindex="{"-1" if duplicate else "0"}">{img}</a>'
+            f'aria-label="{partner["name"]}">{img}</a>'
         )
     else:
-        inner = f'<span class="partners-marquee__mark">{img}</span>'
-    return f'                <div class="partners-marquee__item"{hidden}>{inner}</div>'
+        inner = f'<span class="partners-wall__mark">{img}</span>'
+    return f"""            <li class="partners-wall__item">
+              {inner}
+            </li>"""
 
 
-def _partner_marquee_row(ap: str, row_num: int, partners: list[dict]) -> str:
-    items = "\n".join(_partner_logo_item(ap, p) for p in partners)
-    dup_items = "\n".join(_partner_logo_item(ap, p, duplicate=True) for p in partners)
-    return f"""            <div class="partners-marquee__row partners-marquee__row--{row_num}">
-              <div class="partners-marquee__viewport">
-                <div class="partners-marquee__track">
+def partners_block(ap: str, lang: str = "en") -> str:
+    items = "\n".join(_partner_logo_item(ap, p) for p in PARTNERS)
+    aria = PARTNERS_ARIA.get(lang, PARTNERS_ARIA["en"])
+    return f"""          <ul class="partners-wall" aria-label="{aria}">
 {items}
-{dup_items}
-                </div>
-              </div>
-            </div>"""
-
-
-def partners_block(ap: str) -> str:
-    row1 = _partner_marquee_row(ap, 1, PARTNERS_ROW1)
-    row2 = _partner_marquee_row(ap, 2, PARTNERS_ROW2)
-    return f"""          <div class="partners-marquee" aria-label="Partner logos">
-{row1}
-{row2}
-          </div>"""
+          </ul>"""
 
 
 def build_home(lang: str, ext) -> str:
@@ -741,7 +731,7 @@ def build_home(lang: str, ext) -> str:
           <h2 class="section__title" id="partners-title">{c["partners_h2"]}</h2>
           <hr class="title-rule title-rule--center" />
           <p class="section__lead">{c["partners_lead"]}</p>
-{partners_block(ap)}
+{partners_block(ap, lang)}
         </div>
       </section>
       <section id="work" class="section section--muted" aria-labelledby="work-title">

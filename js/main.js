@@ -335,7 +335,7 @@
   }
 
   var revealSelector =
-    "main > section:not(#home), .service-card, .portfolio-card, .feature-mini, .partners-marquee, .partners-marquee__row";
+    "main > section:not(#home), .service-card, .portfolio-card, .feature-mini, .partners-wall, .partners-wall__item";
   var revealNodes = document.querySelectorAll(revealSelector);
 
   if (revealNodes.length) {
