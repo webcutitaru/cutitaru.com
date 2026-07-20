@@ -826,7 +826,7 @@ def build_home(lang: str, ext) -> str:
       </div>
     </div>
     <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
-    <script src="{ap}js/main.js" defer></script>
+    <script src="{ext.asset_url(ap, 'js/main.js')}" defer></script>
   </body>
 </html>
 """
@@ -1112,7 +1112,7 @@ def build_service_page(lang: str, key: str, ext) -> str:
       </div>
     </div>
     <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
-    <script src="{ap}js/main.js" defer></script>
+    <script src="{ext.asset_url(ap, 'js/main.js')}" defer></script>
   </body>
 </html>
 """

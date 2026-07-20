@@ -8,6 +8,9 @@ _SCRIPTS = Path(__file__).resolve().parent
 _ROOT = _SCRIPTS.parent
 _CONTENT = _ROOT / "content" / "legal"
 
+# Bump when css/js change so browsers ignore nginx expires:max cache
+ASSET_VERSION = "20260721b"
+
 SITE: str = ""
 LANGS: dict = {}
 HOME: dict = {}
@@ -19,6 +22,10 @@ asset_prefix = None  # type: ignore
 portrait_url = None  # type: ignore
 portrait_abs = None  # type: ignore
 lang_href = None  # type: ignore
+
+
+def asset_url(ap: str, path: str) -> str:
+    return f"{ap}{path}?v={ASSET_VERSION}"
 
 
 def bind(gen: object) -> None:
@@ -255,7 +262,7 @@ def head_common(
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@400;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap"
       rel="stylesheet"
     />
-{preload_line}    <link rel="stylesheet" href="{ap}css/styles.css" />"""
+{preload_line}    <link rel="stylesheet" href="{asset_url(ap, 'css/styles.css')}" />"""
 
 
 def home_doc_href(lang: str) -> str:
@@ -463,7 +470,7 @@ def build_legal_page(lang: str, page_key: str) -> str:
       </div>
     </div>
     <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
-    <script src="{ap}js/main.js" defer></script>
+    <script src="{asset_url(ap, 'js/main.js')}" defer></script>
   </body>
 </html>
 """
