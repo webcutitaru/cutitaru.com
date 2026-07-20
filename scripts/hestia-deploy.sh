@@ -59,6 +59,6 @@ rsync -avz -e "$RSYNC_RSH" \
   ./ "${REMOTE}/"
 
 MARKER="$(date -u +%Y-%m-%dT%H:%M:%SZ) cutitaru-hestia-deploy"
-ssh_cmd "$DEPLOY_HOST" "rm -rf '$DEPLOY_PATH/.git' '$DEPLOY_PATH/content' '$DEPLOY_PATH/scripts' '$DEPLOY_PATH/.cursor' 2>/dev/null || true; printf '%s\n' '$MARKER' > '$DEPLOY_PATH/.deploy-marker'; chown -R '$DEPLOY_OWNER' '$DEPLOY_PATH'; chmod 644 '$DEPLOY_PATH/.deploy-marker'"
+ssh_cmd "$DEPLOY_HOST" "rm -rf '$DEPLOY_PATH/.git' '$DEPLOY_PATH/content' '$DEPLOY_PATH/scripts' '$DEPLOY_PATH/.cursor' 2>/dev/null || true; chown -R '$DEPLOY_OWNER' '$DEPLOY_PATH'; find '$DEPLOY_PATH' -type d -exec chmod 755 {} +; find '$DEPLOY_PATH' -type f -exec chmod 644 {} +; chmod 640 '$DEPLOY_PATH/.env' 2>/dev/null || true; printf '%s\n' '$MARKER' > '$DEPLOY_PATH/.deploy-marker'; chown '$DEPLOY_OWNER' '$DEPLOY_PATH/.deploy-marker'; chmod 644 '$DEPLOY_PATH/.deploy-marker'"
 
 echo "Deploy done: $MARKER"
