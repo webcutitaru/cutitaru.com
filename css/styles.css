@@ -1088,12 +1088,13 @@ a:hover {
 .services-carousel__viewport {
   width: 100%;
   min-width: 0;
-  overflow-x: hidden;
+  overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-padding-inline: 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  touch-action: none;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
 }
 
 .services-carousel__viewport::-webkit-scrollbar {
@@ -1197,6 +1198,11 @@ a:hover {
   .services-carousel__viewport {
     container-type: inline-size;
     container-name: services;
+    scroll-snap-type: x mandatory;
+  }
+
+  .services-grid .service-card {
+    scroll-snap-align: center;
   }
 
   @supports (width: 1cqi) {
@@ -1236,6 +1242,7 @@ a:hover {
     overscroll-behavior-x: auto;
     touch-action: auto;
     container-type: normal;
+    scroll-snap-type: none;
   }
 
   .services-grid {

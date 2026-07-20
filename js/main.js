@@ -520,23 +520,6 @@
         return window.matchMedia("(max-width: 719px)").matches;
       }
 
-      servicesViewport.addEventListener(
-        "touchmove",
-        function (e) {
-          if (servicesCarouselMobile()) e.preventDefault();
-        },
-        { passive: false }
-      );
-
-      servicesViewport.addEventListener(
-        "wheel",
-        function (e) {
-          if (!servicesCarouselMobile()) return;
-          if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) e.preventDefault();
-        },
-        { passive: false }
-      );
-
       servicesViewport.addEventListener("keydown", function (e) {
         if (!servicesCarouselMobile()) return;
         if (e.key === "ArrowLeft") {
