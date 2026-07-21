@@ -150,7 +150,7 @@ LANG_UI = {
 
 def json_ld_home(lang: str, faq: list[tuple[str, str]]) -> str:
     descs = {
-        "ro": "Design web, magazine Shopify și reclame Google/Facebook pentru branduri locale și internaționale.",
+        "ro": "Design, site-uri (Shopify, Tilda sau cod custom) și reclame Google & Meta pentru afaceri din Moldova și din afară.",
         "en": "Web design, Shopify stores, and Google/Facebook ads for local and international brands.",
         "ru": "Веб-дизайн, магазины Shopify и реклама Google/Facebook для локальных и международных брендов.",
     }
@@ -208,71 +208,66 @@ def json_ld_home(lang: str, faq: list[tuple[str, str]]) -> str:
 # --- Content dictionaries (abbreviated keys) ---
 HOME = {
     "ro": {
-        "title": "cutitaru — design web, Shopify și reclame online",
-        "desc": "Design web, magazine Shopify și promovare Google/Facebook pentru branduri locale și internaționale. Site-uri rapide, clare, ușor de găsit.",
+        "title": "cutitaru — design, site-uri și reclame online",
+        "desc": "Design, site-uri (Shopify, Tilda sau cod custom) și reclame Google & Meta pentru afaceri din Moldova și din afară.",
         "skip": "Sari la conținut",
         "nav": [("Despre", "#about"), ("Servicii", "#services"), ("Parteneri", "#partners"), ("Contact", "#contact")],
-        "hero_eyebrow": "Cutitaru Signature",
-        "hero_h1": "Hai să construim ceva care contează.",
-        "hero_lead": "Design și dezvoltare web pentru branduri care vor claritate online — site-uri, magazine Shopify și promovare, oriunde ești tu.",
-        "hero_cta": "Începe un proiect",
+        "hero_eyebrow": "cutitaru",
+        "hero_h1": "Design, site-uri și promovare — clare de la început.",
+        "hero_lead": "Identitate vizuală, site-uri (Shopify, Tilda sau custom) și reclame Google & Meta — pentru afaceri din Moldova și din afară.",
+        "hero_cta": "Solicită o estimare",
         "about_eyebrow": "Despre",
-        "about_h2": "Construit cu grijă, susținut după lansare",
-        "about_p1": "Combin design vizual cu dezvoltare web — structură clară, interfață ușor de folosit, cod curat. Nu o pagină frumoasă de moment: ceva care vorbește clar publicului tău și rezistă în timp.",
-        "about_p2": "Lucrez remote cu clienți din Moldova, Europa și din alte piețe. Fiecare proiect începe cu ascultare; când e live, rămân disponibil pentru ajustări și ce urmează.",
+        "about_h2": "Un partener pe care îl poți urmări pe tot parcursul",
+        "about_p1": "Fac design și site-uri care se înțeleg ușor — pe telefon și pe desktop. Scopul nu e o pagină „frumoasă o dată”, ci o prezență online pe care o poți folosi și actualiza.",
+        "about_p2": "Lucrez remote, cu comunicare clară în română, engleză sau rusă. După lansare rămân disponibil pentru ajustări și pașii următori.",
         "services_eyebrow": "Servicii",
-        "services_h2": "Tot ce ai nevoie ca să arăți bine și să crești online",
-        "services_lead": "Te ajut pas cu pas: cum arăți, apoi site-ul, apoi cum te găsesc clienții — și setez totul ca să vezi ce funcționează.",
-        "features": [
-            ("Livrare clară, pas cu pas", "Etape definite, progres constant, fără surprize la final."),
-            ("Aspect unitar peste tot", "Aceeași identitate pe site, social media și materiale."),
-            ("Rezultate pe care le vezi", "Performanță, contacte și claritate — nu doar „pixel perfect”."),
-        ],
-        "campaigns_eyebrow": "Campanii",
-        "campaigns_h2": "Reclame Facebook, Instagram și Google care merg cu site-ul tău",
-        "campaigns_p": "Când cineva dă click pe reclamă, pagina unde ajunge trebuie să fie un pas natural — nu o surpriză. Conectez campaniile la site ca mesajul să rămână clar și să vezi ce aduce rezultate.",
+        "services_h2": "Trei direcții. Un singur standard.",
+        "services_lead": "Alegem împreună ce ai nevoie acum — design, site sau promovare — fără liste lungi de „extra”.",
+        "features": [],
+        "campaigns_eyebrow": "Încredere",
+        "campaigns_h2": "Cum rămâne proiectul sub control",
+        "campaigns_p": "Lucrez transparent: știi ce urmează, ce primești și ce se măsoară.",
         "campaigns_li": [
-            ("Reclame și pagini care se potrivesc", "Același mesaj de la reclamă la site — oamenii știu că sunt locul potrivit."),
-            ("Setup clar, ușor de crescut", "Campanii și audiențe organizate, fără buget irosit."),
-            ("Măsurăm ce contează", "Lead-uri, vânzări sau apeluri — nu doar click-uri."),
-            ("Îmbunătățiri cu sens", "Teste mici, planificate — știi ce merită păstrat."),
+            ("Brief clar, înainte de design", "Stabilim obiectivul, paginile și conținutul înainte să desenăm."),
+            ("Livrare pe etape", "Vezi progresul, dai feedback, fără surprize la final."),
+            ("După lansare, tot aici", "Ajustări, măsurare, următorul pas — fără să cauți pe altcineva."),
         ],
-        "partners_eyebrow": "Încredere",
+        "partners_eyebrow": "Colaborări",
         "partners_h2": "Parteneri și colaborări",
-        "partners_lead": "Branduri și studiouri cu care am lucrat — același standard de calitate și claritate.",
+        "partners_lead": "Branduri și studiouri cu care am colaborat — același nivel de atenție la detalii.",
         "work_eyebrow": "Cum lucrez",
-        "work_h2": "De la idee la site care merge",
-        "work_lead": "Fiecare proiect urmează pași clari: descoperire, structură, design, implementare și lansare — cu feedback regulat la fiecare etapă.",
+        "work_h2": "De la idee la rezultat, pe etape",
+        "work_lead": "Lucrăm pe etape: vorbim, desenăm, construim, lansăm — și îmi spui părerea pe parcurs.",
         "work_cards": [
-            ("Descoperire și structură", "Discutăm obiectivele, publicul și conținutul. Propun sitemap și flux clar înainte de design."),
-            ("Design și prototip", "Machete vizuale, tipografie și culori — revizuim împreună până e clar ce transmite site-ul."),
-            ("Implementare și testare", "Cod curat, mobil, formular contact și SEO de bază. Testăm viteza și traseele importante."),
-            ("Lansare și urmărire", "Publicăm, verificăm analytics și rămân disponibil pentru ajustări și campanii ulterioare."),
+            ("Discuție & plan", "Obiective, public, tip de site sau campanie."),
+            ("Design", "Aspect și structură — le revizuim împreună."),
+            ("Implementare", "Construiesc, testez pe mobil, pregătesc lansarea."),
+            ("Lansare & urmărire", "Publicăm, verificăm și rămân disponibil."),
         ],
         "faq_eyebrow": "Întrebări",
         "faq_h2": "Întrebări frecvente",
         "faq": [
-            ("Ce servicii oferă cutitaru?", "Design web, identitate vizuală, magazine Shopify, formulare și tracking pentru lead-uri, dashboard-uri simple și reclame Google/Facebook — totul legat ca să funcționeze împreună."),
-            ("Lucrezi doar local sau și internațional?", "Remote, cu clienți din Moldova și din alte țări. Proces clar, comunicare în română, engleză sau rusă."),
-            ("Cât costă un site web?", "Depinde de complexitate — un site de prezentare, un magazin Shopify sau campanii de ads au scope diferit. Scrie-mi câteva detalii și îți răspund cu întrebări clare și o estimare onestă."),
-            ("Construiești magazine online Shopify?", "Da. Magazine ușor de navigat, checkout simplu, produse organizate — gata de vânzări local sau pe piețe externe."),
-            ("Te ocupi de reclame Google și Facebook?", "Da. Setez și optimizez campanii legate de site-ul tău, cu rapoarte clare — nu doar click-uri sau like-uri."),
-            ("Cât durează un proiect?", "Depinde de complexitate — scope-ul, conținutul, integrările și feedback-ul determină durata. Discutăm transparent la început, după ce înțeleg brief-ul."),
+            ("Ce servicii oferi?", "Design și identitate vizuală, creare site (Shopify, Tilda sau cod custom) și reclame Google & Meta."),
+            ("Ce tipuri de site faci?", "Site de prezentare, landing page sau magazin online. Platforma o alegem după nevoie — nu după modă."),
+            ("Lucrezi doar în Moldova?", "Lucrez remote, cu clienți din Moldova și din alte țări. Comunic în română, engleză sau rusă."),
+            ("Cât costă un proiect?", "Depinde de ce ai nevoie. După câteva detalii, îți dau o estimare onestă."),
+            ("Te ocupi și de reclame?", "Da. Setez și optimizez campanii Google & Meta legate de site-ul tău, cu rezultate pe care le poți urmări."),
+            ("Cât durează?", "Un landing: de obicei 5–7 zile. Proiectele mai complexe le discutăm individual, în funcție de ce ai nevoie."),
         ],
         "contact_eyebrow": "Contact",
-        "contact_h2": "Hai să construim ceva durabil",
-        "contact_lead": "Spune-mi câteva detalii despre proiect — răspund cu întrebări clare și o estimare onestă.",
+        "contact_h2": "Spune-mi pe scurt ce ai nevoie",
+        "contact_lead": "Câteva rânduri despre proiect sunt suficiente. Răspund cu întrebări clare și o estimare.",
         "form_name": "Nume",
         "form_email": "Email",
         "form_phone": "Telefon (opțional)",
         "form_city": "Oraș (opțional)",
         "form_message": "Mesaj",
         "form_send": "Trimite",
-        "footer_cta_p": "Ai un brief sau doar o idee? Scrie-mi câteva rânduri.",
+        "footer_cta_p": "Ai un brief sau doar o idee? Scrie-mi.",
         "footer_cta_btn": "Contactează-mă",
-        "footer_blurb": "Design și implementare web pentru branduri care vor claritate, viteză și consistență vizuală.",
+        "footer_blurb": "Design, site-uri și promovare online pentru afaceri care vor o prezență clară și de încredere.",
         "footer_explore": "Explorează",
-        "footer_services": "Design web · Magazine Shopify · Reclame online",
+        "footer_services": "Design · Creare site · Reclame Google & Meta",
         "footer_rights": "Toate drepturile rezervate.",
         "footer_privacy": "Confidențialitate",
         "footer_terms": "Termeni",
@@ -291,15 +286,12 @@ HOME = {
         "val_email_bad": "Emailul nu pare valid.",
         "val_message": "Scrie un scurt mesaj.",
         "services": [
-            ("fa-pen-nib", "Logo, culori și identitate", "Aspect unitar: logo, culori, fonturi și reguli simple — pe site, social media și print.", None, "branding"),
-            ("fa-laptop-code", "Site-uri și landing page-uri", "Site-uri clare și rapide, ușor de contactat. Merge bine pe telefon, apare pe Google.", "design", "design"),
-            ("fa-bullseye", "Mai multe solicitări și vânzări", "Formulare, butoane clare și trasee simple — vezi de unde vin contactele.", None, "leads"),
-            ("fa-chart-line", "Rapoarte și mai puțină muncă manuală", "Dashboard-uri și legături cu CRM, foi de calcul, email — mai puțin copy-paste.", None, "reports"),
-            ("fa-brands fa-shopify", "Magazine online (Shopify)", "Magazine ușor de folosit: produse organizate, checkout simplu, pregătite de creștere.", "shopify", "shopify"),
-            ("fa-rectangle-ad", "Reclame Facebook, Instagram și Google", "Campanii testate și ajustate după rezultate reale — nu doar like-uri.", "ads", "ads"),
+            ("fa-pen-nib", "Design & identitate", "Logo, culori, fonturi și un aspect unitar pe site, social și materiale.", None, "branding"),
+            ("fa-laptop-code", "Creare site", "Site de prezentare, landing sau magazin — pe Shopify, Tilda sau cod custom, după ce ți se potrivește.", "design", "design"),
+            ("fa-rectangle-ad", "Reclame Google & Meta", "Campanii pe Google, Facebook și Instagram, legate de site, cu rezultate pe care le poți urmări.", "ads", "ads"),
         ],
-        "talk": "Hai să vorbim",
-        "work_cta": "Hai să vorbim",
+        "talk": "Scrie-mi",
+        "work_cta": "Scrie-mi",
         "carousel_prev": "Derulează serviciile la stânga",
         "carousel_next": "Derulează serviciile la dreapta",
         "carousel_region": "Oferte servicii",
@@ -625,10 +617,30 @@ def build_home(lang: str, ext) -> str:
     )
 
     sl = SERVICE_LINKS[lang]
+    footer_parts = c["footer_services"].split(" · ")
     if lang == "ro":
-        svc_footer = f'<p class="footer-services"><a href="{sl["design"]}">{c["footer_services"].split(" · ")[0]}</a> · <a href="{sl["shopify"]}">{c["footer_services"].split(" · ")[1]}</a> · <a href="{sl["ads"]}">{c["footer_services"].split(" · ")[2]}</a></p>'
+        svc_footer = (
+            f'<p class="footer-services">'
+            f'<a href="#contact">{footer_parts[0]}</a> · '
+            f'<a href="{sl["design"]}">{footer_parts[1]}</a> · '
+            f'<a href="{sl["ads"]}">{footer_parts[2]}</a></p>'
+        )
     else:
-        svc_footer = f'<p class="footer-services"><a href="{sl["design"]}">{c["footer_services"].split(" · ")[0]}</a> · <a href="{sl["shopify"]}">{c["footer_services"].split(" · ")[1]}</a> · <a href="{sl["ads"]}">{c["footer_services"].split(" · ")[2]}</a></p>'
+        svc_footer = (
+            f'<p class="footer-services">'
+            f'<a href="{sl["design"]}">{footer_parts[0]}</a> · '
+            f'<a href="{sl["shopify"]}">{footer_parts[1]}</a> · '
+            f'<a href="{sl["ads"]}">{footer_parts[2]}</a></p>'
+        )
+
+    features_bar = (
+        f"""          <div class="features-bar" role="list">
+{features_html}
+          </div>
+"""
+        if c["features"]
+        else ""
+    )
 
     contact_action = f"{ap}contact.php" if ap else "contact.php"
     csrf_action = f"{ap}contact_token.php" if ap else "contact_token.php"
@@ -708,12 +720,9 @@ def build_home(lang: str, ext) -> str:
             </div>
             <button type="button" class="services-carousel__btn services-carousel__btn--next" data-services-scroll="next" aria-controls="services-scroll-viewport" aria-label="{c["carousel_next"]}">{ext.icon("chevron-right")}</button>
           </div>
-          <div class="features-bar" role="list">
-{features_html}
-          </div>
-        </div>
+{features_bar}        </div>
       </section>
-      <section class="statement" aria-labelledby="statement-title">
+      <section id="trust" class="statement" aria-labelledby="statement-title">
         <div class="container statement-grid">
           <div>
             <p class="section__eyebrow statement__eyebrow">{c["campaigns_eyebrow"]}</p>

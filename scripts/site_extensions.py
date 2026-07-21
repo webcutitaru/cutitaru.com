@@ -9,7 +9,7 @@ _ROOT = _SCRIPTS.parent
 _CONTENT = _ROOT / "content" / "legal"
 
 # Bump when css/js change so browsers ignore nginx expires:max cache
-ASSET_VERSION = "20260721b"
+ASSET_VERSION = "20260721c"
 
 SITE: str = ""
 LANGS: dict = {}
