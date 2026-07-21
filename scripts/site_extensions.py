@@ -386,10 +386,13 @@ def build_legal_page(lang: str, page_key: str) -> str:
     )
 
     sl = SERVICE_LINKS[lang]
+    footer_parts = c["footer_services"].split(" · ")
+    contact = f"{home}#contact"
     svc_footer = (
-        f'<p class="footer-services"><a href="{sl["design"]}">{c["footer_services"].split(" · ")[0]}</a> · '
-        f'<a href="{sl["shopify"]}">{c["footer_services"].split(" · ")[1]}</a> · '
-        f'<a href="{sl["ads"]}">{c["footer_services"].split(" · ")[2]}</a></p>'
+        f'<p class="footer-services">'
+        f'<a href="{contact}">{footer_parts[0]}</a> · '
+        f'<a href="{sl["design"]}">{footer_parts[1]}</a> · '
+        f'<a href="{sl["ads"]}">{footer_parts[2]}</a></p>'
     )
 
     legal_priv = legal_doc_href(lang, "privacy")

@@ -151,8 +151,8 @@ LANG_UI = {
 def json_ld_home(lang: str, faq: list[tuple[str, str]]) -> str:
     descs = {
         "ro": "Design, site-uri (Shopify, Tilda sau cod custom) și reclame Google & Meta pentru afaceri din Moldova și din afară.",
-        "en": "Web design, Shopify stores, and Google/Facebook ads for local and international brands.",
-        "ru": "Веб-дизайн, магазины Shopify и реклама Google/Facebook для локальных и международных брендов.",
+        "en": "Design, websites (Shopify, Tilda, or custom code), and Google & Meta ads for businesses in Moldova and abroad.",
+        "ru": "Дизайн, сайты (Shopify, Tilda или custom-код) и реклама Google & Meta для бизнеса в Молдове и за рубежом.",
     }
     area_served = [
         {"@type": "Country", "name": "Moldova"},
@@ -298,180 +298,167 @@ HOME = {
         "return_to": "/",
     },
     "en": {
-        "title": "cutitaru — web design, Shopify & online ads",
-        "desc": "Web design, Shopify stores, and Google/Facebook promotion for local and international brands. Fast, clear sites that are easy to find.",
+        "title": "cutitaru — design, websites & online ads",
+        "desc": "Design, websites (Shopify, Tilda, or custom code), and Google & Meta ads for businesses in Moldova and abroad.",
         "skip": "Skip to main content",
         "nav": [("About", "#about"), ("Services", "#services"), ("Partners", "#partners"), ("Contact", "#contact")],
-        "hero_eyebrow": "Cutitaru Signature",
-        "hero_h1": "Let's build something that matters.",
-        "hero_lead": "Web design and development for brands that want clarity online — websites, Shopify stores, and promotion, wherever you are.",
-        "hero_cta": "Start a project",
+        "hero_eyebrow": "cutitaru",
+        "hero_h1": "Design, websites & promotion — clear from the start.",
+        "hero_lead": "Visual identity, websites (Shopify, Tilda, or custom), and Google & Meta ads — for businesses in Moldova and abroad.",
+        "hero_cta": "Request an estimate",
         "about_eyebrow": "About",
-        "about_h2": "Built with care, supported after launch",
-        "about_p1": "I combine visual design with web development — clear structure, easy-to-use interface, clean code. Not a one-off pretty page: something that speaks clearly to your audience and holds up over time.",
-        "about_p2": "I work remotely with clients in Moldova, across Europe, and internationally. Every project starts with listening; when it's live, I stay available for tweaks and what comes next.",
+        "about_h2": "A partner you can follow through the whole project",
+        "about_p1": "I design and build websites that are easy to understand — on phone and desktop. The goal isn’t a one-off pretty page, but an online presence you can use and update.",
+        "about_p2": "I work remotely, with clear communication in Romanian, English, or Russian. After launch I stay available for tweaks and next steps.",
         "services_eyebrow": "Services",
-        "services_h2": "Everything you need to look good and grow online",
-        "services_lead": "I help you step by step: how you look, then your website, then getting people to reach out — and I set things up so you can see what's working.",
-        "features": [
-            ("Clear delivery, step by step", "Defined milestones, steady progress, no end-of-project surprises."),
-            ("Consistent look everywhere", "Same identity on your site, social media, and materials."),
-            ("Results you can see", "Performance, leads, and clarity — not just \"pixel perfect.\""),
-        ],
-        "campaigns_eyebrow": "Campaigns",
-        "campaigns_h2": "Facebook, Instagram & Google ads that work with your site",
-        "campaigns_p": "When someone clicks your ad, the page they land on should feel like a natural next step — not a surprise. I connect your campaigns to your website so the message stays clear and you can see what's actually bringing in results.",
+        "services_h2": "Three directions. One standard.",
+        "services_lead": "You choose what you need now — design, a website, or promotion — without long lists of extras.",
+        "features": [],
+        "campaigns_eyebrow": "Trust",
+        "campaigns_h2": "How the project stays under control",
+        "campaigns_p": "I work transparently: you know what’s next, what you get, and what gets measured.",
         "campaigns_li": [
-            ("Ads and pages that match", "Same look and message from the ad to your site, so people know they're in the right place."),
-            ("Clear setup you can grow", "Organized campaigns and audiences so your budget goes where it should, without overlap or wasted spend."),
-            ("Track what matters", "Set up so you see real leads, sales, or calls — not just clicks and impressions."),
-            ("Improve with purpose", "Small, planned tests instead of random tweaks — so you know what's worth keeping."),
+            ("Clear brief before design", "Goal, pages, and content are set before I start designing."),
+            ("Delivery in stages", "You see progress, give feedback, no surprises at the end."),
+            ("After launch, still here", "Tweaks, measurement, next step — without hunting for someone new."),
         ],
-        "partners_eyebrow": "Trust",
+        "partners_eyebrow": "Collaborations",
         "partners_h2": "Partners & collaborations",
-        "partners_lead": "Brands and studios I've worked with — the same bar for quality and clarity.",
+        "partners_lead": "Brands and studios I’ve worked with — the same attention to detail.",
         "work_eyebrow": "How I work",
-        "work_h2": "From idea to a site that works",
-        "work_lead": "Every project follows clear steps: discovery, structure, design, build, and launch — with regular feedback at each stage.",
+        "work_h2": "From idea to result, step by step",
+        "work_lead": "Work happens in stages: talk, design, build, launch — and you share feedback along the way.",
         "work_cards": [
-            ("Discovery & structure", "We align on goals, audience, and content. I propose a sitemap and clear user flow before design starts."),
-            ("Design & prototype", "Visual layouts, typography, and color — we review together until the site’s message is clear."),
-            ("Build & testing", "Clean code, mobile-first, contact form, and basic SEO. We test speed and key user paths."),
-            ("Launch & follow-up", "Go live, verify analytics, and I stay available for tweaks and follow-on campaigns."),
+            ("Talk & plan", "Goals, audience, type of site or campaign."),
+            ("Design", "Look and structure — reviewed together."),
+            ("Build", "I build, test on mobile, prepare for launch."),
+            ("Launch & follow-up", "Go live, check things, and I stay available."),
         ],
         "faq_eyebrow": "FAQ",
         "faq_h2": "Frequently asked questions",
         "faq": [
-            ("What services does cutitaru offer?", "Web design, visual identity, Shopify stores, lead forms and tracking, simple dashboards, and Google/Facebook ads — all connected to work together."),
-            ("Do you work locally or internationally?", "Remotely, with clients in Moldova and other countries. Clear process, communication in Romanian, English, or Russian."),
-            ("How much does a website cost?", "It depends on scope — a presentation site, Shopify store, or ad campaigns differ. Send a few details and I'll reply with clear questions and an honest estimate."),
-            ("Do you build Shopify online stores?", "Yes. Easy-to-browse stores, smooth checkout, organized products — ready for local sales or international markets."),
-            ("Do you manage Google and Facebook ads?", "Yes. I set up and optimize campaigns tied to your site, with clear reports — not just clicks or likes."),
-            ("How long does a project take?", "It depends on complexity — scope, content, integrations, and feedback all affect the timeline. We're transparent about it upfront once I understand your brief."),
+            ("What services do you offer?", "Visual identity and design, website builds (Shopify, Tilda, or custom code), and Google & Meta ads."),
+            ("What kinds of sites do you build?", "Presentation sites, landing pages, or online stores. The platform is chosen based on need — not trends."),
+            ("Do you only work in Moldova?", "I work remotely with clients in Moldova and other countries. I communicate in Romanian, English, or Russian."),
+            ("How much does a project cost?", "It depends on what you need. After a few details, I’ll give you an honest estimate."),
+            ("Do you handle ads as well?", "Yes. I set up and optimize Google & Meta campaigns tied to your site, with results you can track."),
+            ("How long does it take?", "A landing page: usually 5–7 days. More complex projects are discussed individually, based on what you need."),
         ],
         "contact_eyebrow": "Contact",
-        "contact_h2": "Let's build something that lasts",
-        "contact_lead": "Share a few details about your project — I'll reply with focused questions and an honest estimate.",
+        "contact_h2": "Tell me briefly what you need",
+        "contact_lead": "A few lines about the project are enough. I’ll reply with clear questions and an estimate.",
         "form_name": "Name",
         "form_email": "Email",
         "form_phone": "Phone (optional)",
         "form_city": "City (optional)",
         "form_message": "Message",
         "form_send": "Send",
-        "footer_cta_p": "Have a brief or just an idea? Tell me in a few lines.",
+        "footer_cta_p": "Have a brief or just an idea? Write me.",
         "footer_cta_btn": "Contact me",
-        "footer_blurb": "Design and web implementation for brands that want clarity, speed, and visual consistency.",
+        "footer_blurb": "Design, websites, and online promotion for businesses that want a clear, trustworthy presence.",
         "footer_explore": "Explore",
-        "footer_services": "Web design · Shopify stores · Online ads",
+        "footer_services": "Design · Websites · Google & Meta ads",
         "footer_rights": "All rights reserved.",
         "footer_privacy": "Privacy",
         "footer_terms": "Terms",
         "footer_cookies": "Cookies",
         "back_top": "Back to top ↑",
         "cookie_label": "Cookies and analytics on this site",
-        "cookie_text": "We use cookies and similar technologies, including Microsoft Clarity, to understand how this site is used. Accepting hides this banner. See the",
+        "cookie_text": "This site uses cookies and similar technologies, including Microsoft Clarity, to understand how the site is used. Accepting hides this banner. See the",
         "cookie_link": "Cookie policy",
         "cookie_accept": "Accept",
-        "toast_ok": "Your message was sent.\nThank you — I'll get back to you shortly.",
+        "toast_ok": "Your message was sent.\nThank you — I’ll get back to you shortly.",
         "toast_err": "Something went wrong. Please try again or email me directly.",
         "toast_close": "Close notification",
         "toast_btn": "OK",
         "val_name": "Please enter your name.",
         "val_email": "Please enter your email.",
-        "val_email_bad": "That email doesn't look valid.",
+        "val_email_bad": "That email doesn’t look valid.",
         "val_message": "Please enter a short message.",
         "services": [
-            ("fa-pen-nib", "Logo, colors & brand look", "A consistent look: logo direction, colors, fonts, and simple rules — on your site, social media, and print.", None, "branding"),
-            ("fa-laptop-code", "Websites & landing pages", "Clear, fast websites that make it easy to get in touch. Works well on phones and Google.", "design", "design"),
-            ("fa-bullseye", "Get more inquiries & sales", "Contact forms, clear buttons, and simple paths — see where leads come from.", None, "leads"),
-            ("fa-chart-line", "Reports & less manual work", "Dashboards and connections to CRM, spreadsheets, email — less copy-paste.", None, "reports"),
-            ("fa-brands fa-shopify", "Online stores (Shopify)", "Easy-to-use shops: organized products, smooth checkout, ready to grow.", "shopify", "shopify"),
-            ("fa-rectangle-ad", "Facebook, Instagram & Google ads", "Campaigns tested and adjusted based on real results — not just likes.", "ads", "ads"),
+            ("fa-pen-nib", "Design & identity", "Logo, colors, fonts, and a consistent look across site, social, and materials.", None, "branding"),
+            ("fa-laptop-code", "Website builds", "Presentation site, landing, or store — on Shopify, Tilda, or custom code, based on what fits you.", "design", "design"),
+            ("fa-rectangle-ad", "Google & Meta ads", "Campaigns on Google, Facebook, and Instagram, tied to your site, with results you can track.", "ads", "ads"),
         ],
-        "talk": "Let's talk",
-        "work_cta": "Let's talk",
+        "talk": "Write me",
+        "work_cta": "Write me",
         "carousel_prev": "Scroll services left",
         "carousel_next": "Scroll services right",
         "carousel_region": "Service offerings",
         "return_to": "/en/",
     },
     "ru": {
-        "title": "cutitaru — веб-дизайн, Shopify и онлайн-реклама",
-        "desc": "Веб-дизайн, Shopify и реклама Google/Facebook для локальных и международных брендов. Быстрые, понятные сайты.",
+        "title": "cutitaru — дизайн, сайты и онлайн-реклама",
+        "desc": "Дизайн, сайты (Shopify, Tilda или custom-код) и реклама Google & Meta для бизнеса в Молдове и за рубежом.",
         "skip": "Перейти к содержанию",
-        "nav": [("О нас", "#about"), ("Услуги", "#services"), ("Партнёры", "#partners"), ("Контакт", "#contact")],
-        "hero_eyebrow": "Cutitaru Signature",
-        "hero_h1": "Давайте создадим что-то важное.",
-        "hero_lead": "Веб-дизайн и разработка для брендов, которым нужна ясность онлайн — сайты, Shopify и продвижение, где бы вы ни были.",
-        "hero_cta": "Начать проект",
-        "about_eyebrow": "О нас",
-        "about_h2": "С заботой о деталях, поддержка после запуска",
-        "about_p1": "Сочетаю визуальный дизайн с веб-разработкой — чёткая структура, удобный интерфейс, чистый код. Не разовая красивая страница, а то, что понятно аудитории и работает долго.",
-        "about_p2": "Работаю удалённо с клиентами из Молдовы, Европы и других рынков. Каждый проект начинается с диалога; после запуска остаюсь на связи для доработок.",
+        "nav": [("Обо мне", "#about"), ("Услуги", "#services"), ("Партнёры", "#partners"), ("Контакт", "#contact")],
+        "hero_eyebrow": "cutitaru",
+        "hero_h1": "Дизайн, сайты и продвижение — понятно с самого начала.",
+        "hero_lead": "Визуальная идентичность, сайты (Shopify, Tilda или custom) и реклама Google & Meta — для бизнеса в Молдове и за рубежом.",
+        "hero_cta": "Запросить оценку",
+        "about_eyebrow": "Обо мне",
+        "about_h2": "Партнёр, с которым можно пройти весь проект",
+        "about_p1": "Делаю дизайн и сайты, которые легко понять — на телефоне и на компьютере. Цель не «красивая страница один раз», а онлайн-присутствие, которым можно пользоваться и обновлять.",
+        "about_p2": "Работаю удалённо, с понятной коммуникацией на румынском, английском или русском. После запуска остаюсь на связи для правок и следующих шагов.",
         "services_eyebrow": "Услуги",
-        "services_h2": "Всё, чтобы выглядеть профессионально и расти онлайн",
-        "services_lead": "Помогаю шаг за шагом: как вы выглядите, затем сайт, затем как клиенты находят вас — и настраиваю всё, чтобы видеть, что работает.",
-        "features": [
-            ("Чёткая поэтапная работа", "Этапы, постоянный прогресс, без сюрпризов в конце."),
-            ("Единый стиль везде", "Одна идентичность на сайте, в соцсетях и материалах."),
-            ("Результаты, которые видны", "Скорость, заявки и ясность — не только «pixel perfect»."),
-        ],
-        "campaigns_eyebrow": "Реклама",
-        "campaigns_h2": "Реклама Facebook, Instagram и Google, которая работает с вашим сайтом",
-        "campaigns_p": "Когда человек кликает по рекламе, страница должна быть естественным шагом — не сюрпризом. Связываю кампании с сайтом, чтобы сообщение было ясным и вы видели реальные результаты.",
+        "services_h2": "Три направления. Один стандарт.",
+        "services_lead": "Вместе выбираем, что нужно сейчас — дизайн, сайт или продвижение — без длинных списков «допов».",
+        "features": [],
+        "campaigns_eyebrow": "Доверие",
+        "campaigns_h2": "Как проект остаётся под контролем",
+        "campaigns_p": "Работаю прозрачно: вы знаете, что дальше, что получите и что измеряем.",
         "campaigns_li": [
-            ("Реклама и страницы совпадают", "Одинаковый вид и сообщение от рекламы до сайта."),
-            ("Понятная настройка для роста", "Организованные кампании и аудитории — без лишних трат."),
-            ("Отслеживаем важное", "Заявки, продажи, звонки — не только клики."),
-            ("Улучшаем осмысленно", "Небольшие запланированные тесты — знаете, что оставить."),
+            ("Чёткий бриф до дизайна", "Фиксируем цель, страницы и контент до того, как я начну рисовать."),
+            ("Сдача по этапам", "Вы видите прогресс, даёте обратную связь — без сюрпризов в конце."),
+            ("После запуска — тоже здесь", "Правки, измерение, следующий шаг — без поиска нового исполнителя."),
         ],
-        "partners_eyebrow": "Доверие",
+        "partners_eyebrow": "Сотрудничество",
         "partners_h2": "Партнёры и сотрудничество",
-        "partners_lead": "Бренды и студии, с которыми работал — тот же стандарт качества и ясности.",
-        "work_eyebrow": "Как работаю",
-        "work_h2": "От идеи до работающего сайта",
-        "work_lead": "Каждый проект идёт по чётким этапам: исследование, структура, дизайн, разработка и запуск — с регулярной обратной связью на каждом шаге.",
+        "partners_lead": "Бренды и студии, с которыми я работал — то же внимание к деталям.",
+        "work_eyebrow": "Как я работаю",
+        "work_h2": "От идеи к результату — по этапам",
+        "work_lead": "Работаем по этапам: говорим, рисуем, собираем, запускаем — и вы даёте обратную связь по ходу.",
         "work_cards": [
-            ("Исследование и структура", "Обсуждаем цели, аудиторию и контент. Предлагаю карту сайта и понятный путь пользователя до дизайна."),
-            ("Дизайн и прототип", "Макеты, типографика и цвета — согласовываем, пока сообщение сайта не станет ясным."),
-            ("Разработка и тестирование", "Чистый код, мобильная версия, форма связи и базовое SEO. Проверяем скорость и ключевые сценарии."),
-            ("Запуск и сопровождение", "Публикуем, настраиваем аналитику и остаюсь на связи для доработок и рекламных кампаний."),
+            ("Разговор и план", "Цели, аудитория, тип сайта или кампании."),
+            ("Дизайн", "Внешний вид и структура — смотрим вместе."),
+            ("Реализация", "Собираю, тестирую на мобильном, готовлю запуск."),
+            ("Запуск и сопровождение", "Публикуем, проверяем — и я остаюсь на связи."),
         ],
         "faq_eyebrow": "Вопросы",
         "faq_h2": "Частые вопросы",
         "faq": [
-            ("Какие услуги предлагает cutitaru?", "Веб-дизайн, визуальная идентичность, магазины Shopify, формы и отслеживание заявок, простые дашборды и реклама Google/Facebook — всё связано вместе."),
-            ("Работаете только локально или и международно?", "Удалённо, с клиентами из Молдовы и других стран. Чёткий процесс, общение на румынском, английском или русском."),
-            ("Сколько стоит сайт?", "Зависит от объёма — сайт-визитка, Shopify или реклама. Напишите детали — отвечу с вопросами и честной оценкой."),
-            ("Делаете магазины Shopify?", "Да. Удобные магазины, простой checkout, организованные товары — для локальных продаж или зарубежных рынков."),
-            ("Занимаетесь рекламой Google и Facebook?", "Да. Настраиваю и оптимизирую кампании, связанные с сайтом, с понятными отчётами."),
-            ("Сколько длится проект?", "Зависит от сложности — объём, контент, интеграции и обратная связь определяют сроки. Обсудим прозрачно в начале, когда пойму ваш бриф."),
+            ("Какие услуги вы предлагаете?", "Дизайн и визуальная идентичность, создание сайта (Shopify, Tilda или custom-код) и реклама Google & Meta."),
+            ("Какие сайты вы делаете?", "Сайт-визитку, лендинг или интернет-магазин. Платформу выбираем по задаче — не по моде."),
+            ("Работаете только в Молдове?", "Работаю удалённо с клиентами из Молдовы и других стран. Общаюсь на румынском, английском или русском."),
+            ("Сколько стоит проект?", "Зависит от задачи. После нескольких деталей дам честную оценку."),
+            ("Занимаетесь ли рекламой?", "Да. Настраиваю и оптимизирую кампании Google & Meta, связанные с вашим сайтом, с результатами, которые можно отслеживать."),
+            ("Сколько занимает по времени?", "Лендинг: обычно 5–7 дней. Более сложные проекты обсуждаем индивидуально, исходя из задачи."),
         ],
         "contact_eyebrow": "Контакт",
-        "contact_h2": "Давайте построим что-то надёжное",
-        "contact_lead": "Расскажите о проекте — отвечу с вопросами и честной оценкой.",
+        "contact_h2": "Кратко напишите, что нужно",
+        "contact_lead": "Нескольких строк о проекте достаточно. Отвечу с понятными вопросами и оценкой.",
         "form_name": "Имя",
         "form_email": "Email",
         "form_phone": "Телефон (необяз.)",
         "form_city": "Город (необяз.)",
         "form_message": "Сообщение",
         "form_send": "Отправить",
-        "footer_cta_p": "Есть идея или бриф? Напишите несколько строк.",
+        "footer_cta_p": "Есть бриф или только идея? Напишите мне.",
         "footer_cta_btn": "Связаться",
-        "footer_blurb": "Дизайн и веб-разработка для брендов, которым нужны ясность, скорость и визуальная согласованность.",
+        "footer_blurb": "Дизайн, сайты и онлайн-продвижение для бизнеса, которому нужно понятное и надёжное присутствие.",
         "footer_explore": "Разделы",
-        "footer_services": "Веб-дизайн · Shopify · Онлайн-реклама",
+        "footer_services": "Дизайн · Создание сайта · Реклама Google & Meta",
         "footer_rights": "Все права защищены.",
         "footer_privacy": "Конфиденциальность",
         "footer_terms": "Условия",
         "footer_cookies": "Cookie",
         "back_top": "Наверх ↑",
         "cookie_label": "Cookie и аналитика на этом сайте",
-        "cookie_text": "Мы используем cookie и Microsoft Clarity для понимания использования сайта. Принятие скрывает баннер. См.",
+        "cookie_text": "На сайте используются cookie и похожие технологии, включая Microsoft Clarity, чтобы понимать, как им пользуются. Принятие скрывает баннер. См.",
         "cookie_link": "Политику cookie",
         "cookie_accept": "Принять",
         "toast_ok": "Сообщение отправлено.\nСпасибо — скоро отвечу.",
-        "toast_err": "Что-то пошло не так. Попробуйте снова или напишите на email.",
+        "toast_err": "Что-то пошло не так. Попробуйте снова или напишите мне на email.",
         "toast_close": "Закрыть",
         "toast_btn": "OK",
         "val_name": "Введите имя.",
@@ -479,15 +466,12 @@ HOME = {
         "val_email_bad": "Email выглядит неверно.",
         "val_message": "Напишите короткое сообщение.",
         "services": [
-            ("fa-pen-nib", "Логотип, цвета и стиль", "Единый образ: логотип, цвета, шрифты и простые правила — на сайте и в соцсетях.", None, "branding"),
-            ("fa-laptop-code", "Сайты и landing page", "Понятные быстрые сайты, удобно связаться. Хорошо на телефоне и в Google.", "design", "design"),
-            ("fa-bullseye", "Больше заявок и продаж", "Формы, кнопки и простые пути — видно, откуда заявки.", None, "leads"),
-            ("fa-chart-line", "Отчёты и меньше ручной работы", "Дашборды и связи с CRM, таблицами, email.", None, "reports"),
-            ("fa-brands fa-shopify", "Интернет-магазины (Shopify)", "Удобные магазины: товары, checkout, готовы к росту.", "shopify", "shopify"),
-            ("fa-rectangle-ad", "Реклама Facebook, Instagram, Google", "Кампании по реальным результатам — не только лайки.", "ads", "ads"),
+            ("fa-pen-nib", "Дизайн и идентичность", "Логотип, цвета, шрифты и единый вид на сайте, в соцсетях и материалах.", None, "branding"),
+            ("fa-laptop-code", "Создание сайта", "Сайт-визитка, лендинг или магазин — на Shopify, Tilda или custom-коде, как вам подходит.", "design", "design"),
+            ("fa-rectangle-ad", "Реклама Google & Meta", "Кампании в Google, Facebook и Instagram, связанные с сайтом, с результатами, которые можно отслеживать.", "ads", "ads"),
         ],
-        "talk": "Обсудим",
-        "work_cta": "Обсудим",
+        "talk": "Написать",
+        "work_cta": "Написать",
         "carousel_prev": "Прокрутить услуги влево",
         "carousel_next": "Прокрутить услуги вправо",
         "carousel_region": "Услуги",
@@ -618,20 +602,12 @@ def build_home(lang: str, ext) -> str:
 
     sl = SERVICE_LINKS[lang]
     footer_parts = c["footer_services"].split(" · ")
-    if lang == "ro":
-        svc_footer = (
-            f'<p class="footer-services">'
-            f'<a href="#contact">{footer_parts[0]}</a> · '
-            f'<a href="{sl["design"]}">{footer_parts[1]}</a> · '
-            f'<a href="{sl["ads"]}">{footer_parts[2]}</a></p>'
-        )
-    else:
-        svc_footer = (
-            f'<p class="footer-services">'
-            f'<a href="{sl["design"]}">{footer_parts[0]}</a> · '
-            f'<a href="{sl["shopify"]}">{footer_parts[1]}</a> · '
-            f'<a href="{sl["ads"]}">{footer_parts[2]}</a></p>'
-        )
+    svc_footer = (
+        f'<p class="footer-services">'
+        f'<a href="#contact">{footer_parts[0]}</a> · '
+        f'<a href="{sl["design"]}">{footer_parts[1]}</a> · '
+        f'<a href="{sl["ads"]}">{footer_parts[2]}</a></p>'
+    )
 
     features_bar = (
         f"""          <div class="features-bar" role="list">
@@ -852,51 +828,51 @@ SERVICE_PAGES = {
     "design": {
         "ro": {
             "file": "design-web-moldova.html",
-            "title": "Creare site web Moldova — design modern | cutitaru",
-            "desc": "Site-uri de prezentare și landing page-uri pentru business-uri din Moldova. Mobile-first, SEO inclus, livrare clară.",
+            "title": "Creare site web Moldova — landing & site business | cutitaru",
+            "desc": "Fac site-uri de prezentare, landing-uri și magazine în Moldova — pe Shopify, Tilda sau cod custom. Rapid pe mobil, SEO de bază inclus.",
             "h1": "Creare site web în Moldova",
-            "lead": "cutitaru construiește site-uri de prezentare pentru afaceri din Chișinău și Republica Moldova. Fiecare site e rapid, optimizat mobil și pregătit pentru Google.",
+            "lead": "Construiesc site-uri clare pentru afaceri din Chișinău și Republica Moldova: prezentare, landing sau magazin — pe Shopify, Tilda sau cod custom, după ce ți se potrivește.",
             "sections": [
-                ("Ce include un site web cutitaru?", "Design clar, structură ușor de navigat, formulare de contact, optimizare mobil, setări SEO de bază și integrare cu analytics."),
+                ("Ce include?", "Design clar, structură ușor de navigat, formular de contact, optimizare mobil, SEO de bază și analytics."),
                 ("Pentru cine e potrivit?", "IMM-uri, freelanceri, startup-uri și branduri locale care vor un site profesional, ușor de înțeles și de actualizat."),
-                ("Cât durează?", "Un landing page simplu: câteva săptămâni. Un site complet cu mai multe pagini: de obicei 4–8 săptămâni, în funcție de conținut."),
-                ("Cum decurge procesul?", "Începem cu un call scurt și un brief. Propun structura paginilor, apoi design, implementare, testare și lansare — cu revizuiri la fiecare etapă."),
+                ("Cât durează?", "Un landing: de obicei 5–7 zile. Proiectele mai complexe le discutăm individual, în funcție de conținut și scope."),
+                ("Cum decurge procesul?", "Începem cu un call scurt și un brief. Propun structura, apoi design, implementare, testare și lansare — cu revizuiri pe parcurs."),
                 ("Pot actualiza conținutul singur?", "Da, pentru texte și imagini simple. Pentru schimbări majore de structură sau design, rămân disponibil."),
-                ("Site-ul va apărea pe Google?", "Fiecare site include SEO de bază: titluri, meta-descrieri, structură clară și viteză bună — fundament pentru indexare."),
+                ("Site-ul va apărea pe Google?", "Include SEO de bază: titluri, meta-descrieri, structură clară și viteză bună — fundament pentru indexare."),
             ],
             "cta": "Solicită o ofertă",
             "home": "Acasă",
         },
         "en": {
             "file": "web-design-moldova.html",
-            "title": "Web design Moldova — modern sites | cutitaru",
-            "desc": "Presentation websites and landing pages for businesses in Moldova. Mobile-first, SEO included, clear delivery.",
-            "h1": "Web design in Moldova",
-            "lead": "cutitaru builds presentation websites for businesses in Chișinău and Moldova. Every site is fast, mobile-optimized, and ready for Google.",
+            "title": "Website design Moldova — landing & business sites | cutitaru",
+            "desc": "I build presentation sites, landing pages, and stores in Moldova — on Shopify, Tilda, or custom code. Mobile-ready, basic SEO included.",
+            "h1": "Website design in Moldova",
+            "lead": "I build clear websites for businesses in Chișinău and Moldova: presentation, landing, or store — on Shopify, Tilda, or custom code, based on what fits you.",
             "sections": [
-                ("What's included?", "Clear design, easy navigation, contact forms, mobile optimization, basic SEO setup, and analytics integration."),
-                ("Who is it for?", "SMBs, freelancers, startups, and local brands that want a professional, easy-to-understand site."),
-                ("How long does it take?", "A simple landing page: a few weeks. A full multi-page site: usually 4–8 weeks, depending on content."),
-                ("How does the process work?", "We start with a short call and brief. I propose page structure, then design, build, testing, and launch — with reviews at each stage."),
+                ("What’s included?", "Clear design, easy navigation, contact form, mobile optimization, basic SEO, and analytics."),
+                ("Who is it for?", "SMBs, freelancers, startups, and local brands that want a professional site that’s easy to understand and update."),
+                ("How long does it take?", "A landing page: usually 5–7 days. More complex projects are discussed individually, based on content and scope."),
+                ("How does the process work?", "A short call and brief first. I propose structure, then design, build, testing, and launch — with reviews along the way."),
                 ("Can I update content myself?", "Yes, for simple text and image changes. For major structure or design changes, I stay available."),
-                ("Will the site show up on Google?", "Every site includes basic SEO: titles, meta descriptions, clear structure, and good speed — a solid foundation for indexing."),
+                ("Will the site show up on Google?", "Basic SEO is included: titles, meta descriptions, clear structure, and solid speed — a foundation for indexing."),
             ],
             "cta": "Get a quote",
             "home": "Home",
         },
         "ru": {
             "file": "veb-dizayn-moldova.html",
-            "title": "Создание сайта Молдова — веб-дизайн | cutitaru",
-            "desc": "Сайты-визитки и landing page для бизнеса в Молдове. Mobile-first, SEO, чёткая сдача проекта.",
+            "title": "Создание сайта Молдова — лендинг и бизнес-сайт | cutitaru",
+            "desc": "Делаю сайты-визитки, лендинги и магазины в Молдове — на Shopify, Tilda или custom-коде. Удобно на мобильном, базовое SEO включено.",
             "h1": "Создание сайта в Молдове",
-            "lead": "cutitaru создаёт сайты для бизнеса в Кишинёве и Молдове. Быстрые, адаптированные под мобильные и готовые к Google.",
+            "lead": "Создаю понятные сайты для бизнеса в Кишинёве и Молдове: визитка, лендинг или магазин — на Shopify, Tilda или custom-коде, как вам подходит.",
             "sections": [
-                ("Что входит?", "Понятный дизайн, навигация, формы связи, мобильная оптимизация, базовое SEO и аналитика."),
-                ("Для кого?", "Малый бизнес, фрилансеры, стартапы и локальные бренды."),
-                ("Сроки?", "Простой landing — несколько недель. Полный сайт — обычно 4–8 недель."),
-                ("Как проходит процесс?", "Начинаем с короткого созвона и брифа. Предлагаю структуру страниц, затем дизайн, разработку, тестирование и запуск — с согласованием на каждом этапе."),
+                ("Что входит?", "Понятный дизайн, удобная навигация, форма связи, мобильная оптимизация, базовое SEO и аналитика."),
+                ("Для кого?", "Малый бизнес, фрилансеры, стартапы и локальные бренды, которым нужен профессиональный сайт — понятный и обновляемый."),
+                ("Сколько по времени?", "Лендинг: обычно 5–7 дней. Более сложные проекты обсуждаем индивидуально — по контенту и объёму."),
+                ("Как проходит процесс?", "Сначала короткий созвон и бриф. Предлагаю структуру, затем дизайн, сборку, тесты и запуск — с правками по ходу."),
                 ("Смогу ли обновлять контент сам?", "Да, для простых текстов и изображений. При серьёзных изменениях структуры или дизайна остаюсь на связи."),
-                ("Будет ли сайт в Google?", "Каждый сайт включает базовое SEO: заголовки, meta-описания, чёткая структура и хорошая скорость — основа для индексации."),
+                ("Будет ли сайт в Google?", "Входит базовое SEO: заголовки, meta-описания, чёткая структура и хорошая скорость — основа для индексации."),
             ],
             "cta": "Запросить предложение",
             "home": "Главная",
@@ -906,15 +882,15 @@ SERVICE_PAGES = {
         "ro": {
             "file": "magazin-online-shopify-moldova.html",
             "title": "Magazin online Shopify Moldova | cutitaru",
-            "desc": "Construiesc magazine Shopify ușor de folosit — produse, checkout, plăți. Pentru vânzări online în Moldova.",
+            "desc": "Construiesc magazine Shopify ușor de folosit pentru vânzări în Moldova și export — catalog, checkout, plăți.",
             "h1": "Magazin online Shopify în Moldova",
             "lead": "Construiesc magazine Shopify ușor de navigat și de administrat — produse organizate, checkout simplu, pregătite pentru vânzări locale sau export.",
             "sections": [
                 ("Ce include?", "Structură catalog, pagini produs clare, checkout optimizat, alegere theme și apps potrivite, training de bază."),
                 ("Pentru cine?", "Branduri care vând produse fizice sau digitale și vor o platformă stabilă, fără complicații tehnice."),
-                ("Cât durează?", "Magazin mediu: de obicei 4–8 săptămâni, în funcție de numărul de produse și integrări."),
-                ("Cum decurge procesul?", "Planificăm catalogul, designul paginilor și checkout-ul. Implementez, testez plățile și livrarea, apoi lansăm cu training scurt."),
-                ("Pot vinde în străinătate?", "Da — Shopify suportă piețe multiple, valute și livrări internaționale. Setăm totul pas cu pas."),
+                ("Cât durează?", "Un magazin mediu: de obicei câteva săptămâni, în funcție de produse și integrări. Scope-ul mai mare îl discutăm individual."),
+                ("Cum decurge procesul?", "Planific catalogul, designul paginilor și checkout-ul. Implementez, testez plățile și livrarea, apoi lansăm cu un training scurt."),
+                ("Pot vinde în străinătate?", "Da — Shopify suportă piețe multiple, valute și livrări internaționale. Setez totul pas cu pas."),
                 ("Ce se întâmplă după lansare?", "Rămân disponibil pentru ajustări, produse noi și integrări — plus recomandări pentru reclame dacă ai nevoie."),
             ],
             "cta": "Solicită o ofertă",
@@ -923,15 +899,15 @@ SERVICE_PAGES = {
         "en": {
             "file": "shopify-store-moldova.html",
             "title": "Shopify store Moldova | cutitaru",
-            "desc": "Easy-to-use Shopify stores for businesses in Moldova — products, checkout, payments.",
+            "desc": "I build easy-to-use Shopify stores for sales in Moldova and abroad — catalog, checkout, payments.",
             "h1": "Shopify online store in Moldova",
             "lead": "I build Shopify stores that are easy to browse and manage — organized products, smooth checkout, ready for local or export sales.",
             "sections": [
-                ("What's included?", "Catalog structure, clear product pages, optimized checkout, theme and app selection, basic training."),
-                ("Who is it for?", "Brands selling physical or digital products who want a stable platform without technical hassle."),
-                ("How long?", "A medium store: usually 4–8 weeks, depending on products and integrations."),
-                ("How does the process work?", "We plan the catalog, page design, and checkout. I build, test payments and shipping, then launch with a short training session."),
-                ("Can I sell internationally?", "Yes — Shopify supports multiple markets, currencies, and international shipping. We set it up step by step."),
+                ("What’s included?", "Catalog structure, clear product pages, optimized checkout, theme and app selection, basic training."),
+                ("Who is it for?", "Brands selling physical or digital products that want a stable platform without technical hassle."),
+                ("How long?", "A mid-size store: usually a few weeks, depending on products and integrations. Larger scope is discussed individually."),
+                ("How does the process work?", "I plan the catalog, page design, and checkout. Then I build, test payments and shipping, and launch with a short training session."),
+                ("Can I sell internationally?", "Yes — Shopify supports multiple markets, currencies, and international shipping. I set it up step by step."),
                 ("What happens after launch?", "I stay available for tweaks, new products, and integrations — plus ad recommendations if you need them."),
             ],
             "cta": "Get a quote",
@@ -940,16 +916,16 @@ SERVICE_PAGES = {
         "ru": {
             "file": "internet-magazin-shopify-moldova.html",
             "title": "Интернет-магазин Shopify Молдова | cutitaru",
-            "desc": "Магазины Shopify для бизнеса в Молдове — товары, checkout, оплата.",
+            "desc": "Создаю удобные магазины Shopify для продаж в Молдове и на экспорт — каталог, checkout, оплата.",
             "h1": "Интернет-магазин Shopify в Молдове",
-            "lead": "Создаю магазины Shopify для клиентов из Молдовы и международных рынков — удобные для покупателей, с организованным каталогом, простым checkout и готовностью к экспорту.",
+            "lead": "Создаю магазины Shopify, удобные для покупателей и для вас — организованный каталог, простой checkout, готовность к локальным продажам или экспорту.",
             "sections": [
-                ("Что входит?", "Структура каталога, страницы товаров, checkout, выбор темы и приложений, базовое обучение."),
-                ("Для кого?", "Бренды с физическими или цифровыми товарами — локальные и международные."),
-                ("Сроки?", "Средний магазин — обычно 4–8 недель."),
-                ("Как проходит процесс?", "Планируем каталог, дизайн страниц и checkout. Разрабатываю, тестирую оплату и доставку, затем запуск с кратким обучением."),
-                ("Можно продавать за рубеж?", "Да — Shopify поддерживает несколько рынков, валют и международную доставку. Настраиваем поэтапно."),
-                ("Что после запуска?", "Остаюсь на связи для доработок, новых товаров и интеграций — и рекомендаций по рекламе при необходимости."),
+                ("Что входит?", "Структура каталога, понятные страницы товаров, оптимизированный checkout, подбор темы и приложений, базовое обучение."),
+                ("Для кого?", "Бренды с физическими или цифровыми товарами, которым нужна стабильная платформа без лишней технической сложности."),
+                ("Сроки?", "Средний магазин: обычно несколько недель — зависит от товаров и интеграций. Больший объём обсуждаем индивидуально."),
+                ("Как проходит процесс?", "Планирую каталог, дизайн страниц и checkout. Затем собираю, тестирую оплату и доставку, запускаю с коротким обучением."),
+                ("Можно продавать за рубеж?", "Да — Shopify поддерживает несколько рынков, валют и международную доставку. Настраиваю поэтапно."),
+                ("Что после запуска?", "Остаюсь на связи для правок, новых товаров и интеграций — и рекомендаций по рекламе при необходимости."),
             ],
             "cta": "Запросить предложение",
             "home": "Главная",
@@ -958,15 +934,15 @@ SERVICE_PAGES = {
     "ads": {
         "ro": {
             "file": "reclame-google-facebook-moldova.html",
-            "title": "Reclame Google și Facebook Moldova | cutitaru",
-            "desc": "Campanii Google Ads și Meta Ads pentru afaceri din Moldova, legate de site-ul tău. Setup, testare, rapoarte clare.",
-            "h1": "Reclame Google și Facebook în Moldova",
+            "title": "Reclame Google & Meta Moldova | cutitaru",
+            "desc": "Setez campanii Google Ads și Meta (Facebook, Instagram) pentru afaceri din Moldova, legate de site — setup, testare, rapoarte clare.",
+            "h1": "Reclame Google & Meta în Moldova",
             "lead": "Setez și optimizez campanii Google Ads și Meta (Facebook, Instagram) legate de site-ul tău — ca bugetul să meargă spre lead-uri și vânzări reale.",
             "sections": [
                 ("Ce include?", "Structură campanii, audiențe, creativ aliniat cu site-ul, tracking conversii, rapoarte simple."),
                 ("Pentru cine?", "Afaceri din Moldova care au deja un site sau magazin și vor trafic plătit cu măsurare clară."),
-                ("Cum funcționează?", "Pornim cu obiective clare, testăm, ajustăm — fără schimbări la întâmplare."),
-                ("Cum decurge procesul?", "Analizăm site-ul și obiectivele, setăm tracking, lansăm campanii pilot, apoi optimizăm pe baza datelor reale."),
+                ("Cum funcționează?", "Pornim de la obiective clare, testăm, ajustăm — fără schimbări la întâmplare."),
+                ("Cum decurge procesul?", "Analizez site-ul și obiectivele, setez tracking, lansez campanii pilot, apoi optimizez pe baza datelor reale."),
                 ("Lucrezi doar în Moldova?", "Campaniile pot ținti Moldova sau piețe externe — audiențe, limbă și creativ aliniate cu publicul tău."),
                 ("Cât costă managementul?", "Depinde de buget și platforme. Discutăm transparent înainte de start — fără contracte pe termen lung obligatorii."),
             ],
@@ -975,32 +951,32 @@ SERVICE_PAGES = {
         },
         "en": {
             "file": "google-facebook-ads-moldova.html",
-            "title": "Google & Facebook ads Moldova | cutitaru",
-            "desc": "Google Ads and Meta campaigns for businesses in Moldova. Setup, testing, clear reports tied to your site.",
-            "h1": "Google & Facebook ads in Moldova",
+            "title": "Google & Meta ads Moldova | cutitaru",
+            "desc": "I set up Google Ads and Meta (Facebook, Instagram) campaigns for businesses in Moldova, tied to your site — setup, testing, clear reports.",
+            "h1": "Google & Meta ads in Moldova",
             "lead": "I set up and optimize Google Ads and Meta (Facebook, Instagram) campaigns tied to your website — so budget goes toward real leads and sales.",
             "sections": [
-                ("What's included?", "Campaign structure, audiences, creatives aligned with your site, conversion tracking, simple reports."),
-                ("Who is it for?", "Businesses in Moldova with a site or store who want paid traffic with clear measurement."),
+                ("What’s included?", "Campaign structure, audiences, creatives aligned with your site, conversion tracking, simple reports."),
+                ("Who is it for?", "Businesses in Moldova with a site or store that want paid traffic with clear measurement."),
                 ("How does it work?", "Clear goals first, then test and adjust — no random changes."),
-                ("How does the process work?", "We review your site and goals, set up tracking, launch pilot campaigns, then optimize based on real data."),
+                ("How does the process work?", "I review your site and goals, set up tracking, launch pilot campaigns, then optimize based on real data."),
                 ("Do you only target Moldova?", "Campaigns can target Moldova or international markets — audiences, language, and creatives matched to your audience."),
-                ("What does management cost?", "Depends on budget and platforms. We discuss transparently before starting — no mandatory long-term contracts."),
+                ("What does management cost?", "Depends on budget and platforms. Discussed transparently before starting — no mandatory long-term contracts."),
             ],
             "cta": "Get a quote",
             "home": "Home",
         },
         "ru": {
             "file": "reklama-google-facebook-moldova.html",
-            "title": "Реклама Google и Facebook Молдова | cutitaru",
-            "desc": "Кампании Google Ads и Meta для бизнеса в Молдове, связанные с вашим сайтом.",
-            "h1": "Реклама Google и Facebook в Молдове",
-            "lead": "Настраиваю и оптимизирую Google Ads и Meta (Facebook, Instagram), связанные с сайтом — бюджет идёт на реальные заявки и продажи.",
+            "title": "Реклама Google & Meta Молдова | cutitaru",
+            "desc": "Настраиваю кампании Google Ads и Meta (Facebook, Instagram) для бизнеса в Молдове, связанные с сайтом — setup, тесты, понятные отчёты.",
+            "h1": "Реклама Google & Meta в Молдове",
+            "lead": "Настраиваю и оптимизирую Google Ads и Meta (Facebook, Instagram), связанные с вашим сайтом — чтобы бюджет шёл на реальные заявки и продажи.",
             "sections": [
-                ("Что входит?", "Структура кампаний, аудитории, креативы, отслеживание конверсий, отчёты."),
-                ("Для кого?", "Бизнес в Молдове с сайтом или магазином, которому нужен платный трафик с измерением."),
-                ("Как работает?", "Чёткие цели, тесты, корректировки — без хаотичных изменений."),
-                ("Как проходит процесс?", "Анализируем сайт и цели, настраиваем tracking, запускаем пилотные кампании, затем оптимизируем по данным."),
+                ("Что входит?", "Структура кампаний, аудитории, креативы под сайт, отслеживание конверсий, простые отчёты."),
+                ("Для кого?", "Бизнес в Молдове с сайтом или магазином, которому нужен платный трафик с понятным измерением."),
+                ("Как это работает?", "Сначала чёткие цели, затем тесты и корректировки — без хаотичных изменений."),
+                ("Как проходит процесс?", "Смотрю сайт и цели, настраиваю tracking, запускаю пилотные кампании, затем оптимизирую по данным."),
                 ("Только Молдова?", "Кампании могут таргетировать Молдову или международные рынки — аудитории, язык и креативы под вашу аудиторию."),
                 ("Сколько стоит ведение?", "Зависит от бюджета и платформ. Обсуждаем прозрачно до старта — без обязательных долгосрочных контрактов."),
             ],
@@ -1034,10 +1010,12 @@ def build_service_page(lang: str, key: str, ext) -> str:
         if href != "#home"
     )
     sl = SERVICE_LINKS[lang]
+    footer_parts = c["footer_services"].split(" · ")
     svc_footer = (
-        f'<p class="footer-services"><a href="{sl["design"]}">{c["footer_services"].split(" · ")[0]}</a> · '
-        f'<a href="{sl["shopify"]}">{c["footer_services"].split(" · ")[1]}</a> · '
-        f'<a href="{sl["ads"]}">{c["footer_services"].split(" · ")[2]}</a></p>'
+        f'<p class="footer-services">'
+        f'<a href="{contact}">{footer_parts[0]}</a> · '
+        f'<a href="{sl["design"]}">{footer_parts[1]}</a> · '
+        f'<a href="{sl["ads"]}">{footer_parts[2]}</a></p>'
     )
     legal_priv = ext.legal_doc_href(lang, "privacy")
     legal_terms = ext.legal_doc_href(lang, "terms")
@@ -1177,22 +1155,22 @@ def write_seo_files():
     (ROOT / "llms.txt").write_text(
         f"""# cutitaru
 
-> Web design, Shopify stores, and Google/Facebook ads for businesses in Moldova and internationally. Remote — Chișinău and worldwide. Languages: Romanian, English, Russian.
+> Design, websites (Shopify, Tilda, or custom), and Google & Meta ads for businesses in Moldova and internationally. Remote — Chișinău and worldwide. Languages: Romanian, English, Russian. Solo — Adrian Cutitaru.
 
 ## Services (RO)
-- [Design web Moldova]({SITE}/design-web-moldova.html): Site-uri de prezentare, landing pages, SEO inclus.
-- [Shopify Moldova]({SITE}/magazin-online-shopify-moldova.html): Magazine online complete.
-- [Reclame Google/Facebook]({SITE}/reclame-google-facebook-moldova.html): Campanii plătite cu tracking.
+- [Creare site Moldova]({SITE}/design-web-moldova.html): Prezentare, landing, magazin — Shopify, Tilda sau custom. SEO de bază.
+- [Shopify Moldova]({SITE}/magazin-online-shopify-moldova.html): Magazine online Shopify.
+- [Reclame Google & Meta]({SITE}/reclame-google-facebook-moldova.html): Campanii plătite cu tracking.
 
 ## Services (EN)
-- [Web design Moldova]({SITE}/en/web-design-moldova.html): Presentation websites, landing pages, SEO included.
-- [Shopify store Moldova]({SITE}/en/shopify-store-moldova.html): Full online stores.
-- [Google & Facebook ads]({SITE}/en/google-facebook-ads-moldova.html): Paid campaigns with tracking.
+- [Website design Moldova]({SITE}/en/web-design-moldova.html): Presentation, landing, or store — Shopify, Tilda, or custom. Basic SEO.
+- [Shopify store Moldova]({SITE}/en/shopify-store-moldova.html): Full Shopify online stores.
+- [Google & Meta ads]({SITE}/en/google-facebook-ads-moldova.html): Paid campaigns with tracking.
 
 ## Services (RU)
-- [Веб-дизайн Молдова]({SITE}/ru/veb-dizayn-moldova.html): Сайты-визитки, landing page, SEO.
-- [Shopify Молдова]({SITE}/ru/internet-magazin-shopify-moldova.html): Интернет-магазины.
-- [Реклама Google/Facebook]({SITE}/ru/reklama-google-facebook-moldova.html): Платные кампании с отслеживанием.
+- [Создание сайта Молдова]({SITE}/ru/veb-dizayn-moldova.html): Визитка, лендинг или магазин — Shopify, Tilda или custom. Базовое SEO.
+- [Shopify Молдова]({SITE}/ru/internet-magazin-shopify-moldova.html): Интернет-магазины Shopify.
+- [Реклама Google & Meta]({SITE}/ru/reklama-google-facebook-moldova.html): Платные кампании с отслеживанием.
 
 ## Pages
 - [Acasă RO]({SITE}/): Servicii, FAQ, contact.
